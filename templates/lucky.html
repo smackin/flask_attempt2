@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Feelin' Lucky?  {% endblock %}
+{% block content %} 
+    <h1> Your Lucky Number is: {{lucky_num}} </h1> 
+    <!-- <p> {{msg}} </p> -->
+    
+    {% if lucky_num == 3 %}
+        <h2>  YOU HAVE THE RIGHT LUCKY NUMBER!  </h2>
+        <img 
+        src="https://media0.giphy.com/media/yaYV8i5n1OjZe/giphy.gif" alt="">
+    {%else%} 
+        <h2> Sorry, That's not the magic number! </h2>   
+        <img
+        src="https://eternity.nactum.net/ahahahyoudidntsaythemagicword.jpg" alt="">
+    {%endif %}
+
+{% endblock %}
